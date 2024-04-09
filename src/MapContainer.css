@@ -1,0 +1,5 @@
+.map-container {
+    border: 1px solid #ccc; /* Border style */
+    padding: 15px; /* Padding to create space around the map */
+    margin-top: 20px; /* Margin to add space between the map and other elements */
+  }

@@ -21,13 +21,11 @@ const fetchCoordinates = async (criteria) => {
 const App = () => {
   const [coordinates, setCoordinates] = useState([]);
   const [searchCriteria, setSearchCriteria] = useState({});
-  
+
   const handleSearch = (criteria) => {
     const filteredCriteria = Object.fromEntries(
       Object.entries(criteria).filter(([key, value]) => value !== '')
     );
-    console.log(JSON.stringify(filteredCriteria));
-
     setSearchCriteria(filteredCriteria);
 
     fetchCoordinates(filteredCriteria)
@@ -50,10 +48,14 @@ const App = () => {
   }, [searchCriteria]);
 
   return (
-    <div className="page-container"> {/* Add the page-container class */}
-      <h1 className="page-title">Food Truck Locations</h1>
-      <SearchForm onSearch={handleSearch} />
-      <MapContainer coordinates={coordinates} />
+    <div className="app-container">
+      <h1 className="app-title">Food Truck Locations</h1>
+      <div className="search-panel">
+        <SearchForm onSearch={handleSearch} />
+      </div>
+      <div className="map-container">
+        <MapContainer coordinates={coordinates} />
+      </div>
     </div>
   );
 };

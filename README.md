@@ -71,4 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Example map
 
+Created a map of food trucks. You can narrow the number of markers with the search form. The markers are clickable so information about each clicked truck can be displayed below the map.
+
 ![Truck Map](./truck-map.png)

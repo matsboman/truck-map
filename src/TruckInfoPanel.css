@@ -1,0 +1,19 @@
+/* TruckInfoPanel.css */
+.truck-info-wrapper {
+    border: 10px solid #dee2e6;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  
+  .truck-info-panel {
+    padding: 20px;
+  }
+  
+  .truck-info-label {
+    font-weight: bold;
+  }
+  
+  .truck-info-value {
+    margin-bottom: 10px;
+  }
+  
